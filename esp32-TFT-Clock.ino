@@ -15,12 +15,12 @@ WiFiUDP ntpUDP;
 NTPClient timeClient(ntpUDP, "pool.ntp.org", gmtOffset_sec);
 
 // Define TFT pins
-#define TFT_MISO 19
-#define TFT_MOSI 23
-#define TFT_SCLK 18
-#define TFT_CS    15  
-#define TFT_DC    2  
-#define TFT_RST   4
+#define TFT_CS     15
+#define TFT_RST    4
+#define TFT_DC     2
+#define TFT_MOSI   23
+#define TFT_SCK    18
+#define TFT_MISO   19
 
 TFT_eSPI tft = TFT_eSPI();  
 
